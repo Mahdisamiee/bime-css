@@ -1,3 +1,10 @@
+:root {
+  --color-primary: #239dea;
+  --color-secondary: #f7d800;
+  --color-grey-1: #e7e9ec;
+  --color-grey-2: #707070;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -17,7 +24,103 @@ html {
 }
 
 body {
-  font-family: mitra, sans-serif;
+  font-family: vazir, sans-serif;
   font-size: 1.6rem;
+  direction: rtl;
+  background-color: var(--color-grey-1);
+  color: var(--color-grey-2);
+  width: 100%;
+  min-height: 100vh;
+}
+
+.header {
+  background-color: #fff;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.logo-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0.8rem 8rem;
+}
+
+.logo-box__logo {
+  width: 6.5rem;
+  height: 7rem;
+}
+
+.logo-box__title {
+  font-size: 4rem;
+  font-weight: bold;
+}
+
+.navigation {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 50%;
+          flex: 1 0 50%;
+}
+
+.list {
+  list-style: none;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.list__item {
+  display: inline-block;
+}
+
+.list__link:link, .list__link:visited {
+  color: var(--color-grey-2);
+  text-decoration: none;
+  font-size: 1.6rem;
+  font-weight: bold;
+  padding: 0.5rem 1.5rem;
+  border-radius: 3px;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.list__link:hover {
+  background-color: var(--color-primary);
+  color: #fff;
+}
+
+.profile {
+  padding: 0.8rem 8rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-decoration: none;
+  color: var(--color-grey-2);
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+
+.profile__img {
+  width: 2.1rem;
+  height: auto;
+  margin-left: 1rem;
 }
 /*# sourceMappingURL=main.css.map */

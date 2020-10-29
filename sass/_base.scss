@@ -1,3 +1,11 @@
+:root {
+  --color-primary: #239dea;
+  --color-secondary: #f7d800;
+
+  --color-grey-1: #e7e9ec;
+  --color-grey-2: #707070;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -15,6 +23,11 @@ html {
 }
 
 body {
-  font-family: mitra, sans-serif;
+  font-family: vazir, sans-serif;
   font-size: 1.6rem;
+  direction: rtl;
+  background-color: var(--color-grey-1);
+  color: var(--color-grey-2);
+  width: 100%;
+  min-height: 100vh;
 }
