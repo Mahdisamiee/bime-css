@@ -3,6 +3,7 @@
   --color-secondary: #f7d800;
   --color-grey-1: #e7e9ec;
   --color-grey-2: #707070;
+  --color-grey-light: #f7f7f7;
 }
 
 * {
@@ -44,6 +45,21 @@ body {
           justify-content: space-between;
 }
 
+.about {
+  height: 88vh;
+  background-image: url("../img/background1.png");
+  background-size: cover;
+  background-position: 50% 20%;
+  background-attachment: fixed;
+  position: relative;
+}
+
+.enter-main {
+  background-color: var(--color-grey-light);
+  position: relative;
+  min-height: 80rem;
+}
+
 .logo-box {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -51,16 +67,17 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 0.8rem 8rem;
+  padding: 0.5rem 8rem;
 }
 
 .logo-box__logo {
-  width: 6.5rem;
-  height: 7rem;
+  width: 6rem;
+  height: 6.5rem;
 }
 
 .logo-box__title {
-  font-size: 4rem;
+  color: var(--color-primary);
+  font-size: 3.5rem;
   font-weight: bold;
 }
 
@@ -91,7 +108,7 @@ body {
 .list__link:link, .list__link:visited {
   color: var(--color-grey-2);
   text-decoration: none;
-  font-size: 1.6rem;
+  font-size: 1.5rem;
   font-weight: bold;
   padding: 0.5rem 1.5rem;
   border-radius: 3px;
@@ -105,7 +122,7 @@ body {
 }
 
 .profile {
-  padding: 0.8rem 8rem;
+  padding: 0.5rem 8rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -122,5 +139,209 @@ body {
   width: 2.1rem;
   height: auto;
   margin-left: 1rem;
+}
+
+.bimes {
+  width: 55%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -68%);
+          transform: translate(-50%, -68%);
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  border-radius: 1rem 1rem 2.5rem 2.5rem;
+  border-top: 4.5rem solid var(--color-primary);
+}
+
+.bimes__item:link, .bimes__item:visited {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 25%;
+          flex: 1 0 25%;
+  outline: 2px solid var(--color-primary);
+  padding: 2rem 3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: rgba(255, 255, 255, 0.8);
+  text-decoration: none;
+  color: var(--color-primary);
+  font-size: 1.6rem;
+  font-weight: bold;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.bimes__item:hover {
+  background-color: white;
+}
+
+.bimes__item:hover .bimes__item-icon {
+  -webkit-transform: translateY(-1rem) scale(1.1);
+          transform: translateY(-1rem) scale(1.1);
+}
+
+.bimes__item:hover .bimes__item-text {
+  -webkit-transform: translateY(-1rem);
+          transform: translateY(-1rem);
+}
+
+.bimes__item-icon {
+  width: 8rem;
+  margin-bottom: 2.5rem;
+  -webkit-transform: translateY(0) scale(0.8);
+          transform: translateY(0) scale(0.8);
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.bimes__item-text {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.main-card {
+  background-color: #fff;
+  -webkit-box-shadow: 0rem 2rem 3rem rgba(0, 0, 0, 0.1);
+          box-shadow: 0rem 2rem 3rem rgba(0, 0, 0, 0.1);
+  width: 60%;
+  position: absolute;
+  top: -10rem;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
+  min-height: 100rem;
+  padding: 3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.card__header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: var(--color-primary);
+}
+
+.card__header-title {
+  font-size: 3rem;
+}
+
+.card__features-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.card__remainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.card__remainer-title {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.card__remainer-form {
+  border: 1px solid var(--color-primary);
+  min-height: 35rem;
+  padding: 2rem 3.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: justify;
+      align-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.card__remainer-form .form-group {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 30%;
+          flex: 0 0 30%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.feature {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.feature__img {
+  width: 14rem;
+  height: auto;
+  padding: 1rem;
+}
+
+.feature__text {
+  font-size: 1.4rem;
+  font-weight: 400;
+  color: var(--color-grey-2);
 }
 /*# sourceMappingURL=main.css.map */

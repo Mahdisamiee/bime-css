@@ -6,3 +6,34 @@
   display: flex;
   justify-content: space-between;
 }
+
+///////////////////////////////
+// MAIN
+
+// ////////////
+// ABOUT
+.about{
+  // width: 100%;
+  // height: 100vh;
+
+  height: 88vh;
+  background-image: url("../img/background1.png");
+  background-size: cover;
+  background-position: 50% 20%;
+  background-attachment: fixed;
+
+  position: relative;
+
+}
+
+
+// ////////////
+// ENTERNAL MAIN
+
+.enter-main{
+  background-color: var(--color-grey-light);
+  position: relative;
+
+  //test
+  min-height: 80rem;
+}
