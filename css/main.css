@@ -57,7 +57,7 @@ body {
 .enter-main {
   background-color: var(--color-grey-light);
   position: relative;
-  min-height: 80rem;
+  min-height: 100rem;
 }
 
 .logo-box {
@@ -226,6 +226,7 @@ body {
   left: 50%;
   -webkit-transform: translate(-50%, 0);
           transform: translate(-50%, 0);
+  border-radius: 50px;
   min-height: 100rem;
   padding: 3rem;
   display: -webkit-box;
@@ -285,12 +286,15 @@ body {
 
 .card__remainer-title {
   font-size: 2rem;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
+}
+
+.card__remainer-shapes {
+  background-color: red;
 }
 
 .card__remainer-form {
   border: 1px solid var(--color-primary);
-  min-height: 35rem;
   padding: 2rem 3.5rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -305,19 +309,6 @@ body {
       align-content: space-between;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-}
-
-.card__remainer-form .form-group {
-  -webkit-box-flex: 0;
-      -ms-flex: 0 0 30%;
-          flex: 0 0 30%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
 }
 
 .feature {
@@ -343,5 +334,46 @@ body {
   font-size: 1.4rem;
   font-weight: 400;
   color: var(--color-grey-2);
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 31%;
+          flex: 0 0 31%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.form-group .form__label {
+  color: var(--color-primary);
+  font-size: 1.6rem;
+  margin-right: 2rem;
+  margin-bottom: 1rem;
+}
+
+.form-group .form__input {
+  font-family: inherit;
+  padding: 1.5rem 2.5rem;
+  border: 1.5px solid var(--color-primary);
+  border-radius: 10px;
+  -webkit-box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.1);
+          box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.1);
+}
+
+.btn__submit {
+  font-family: inherit;
+  border: none;
+  background-color: var(--color-primary);
+  padding: 1rem 2.5rem;
+  border-radius: 10px;
+  color: #fff;
+  font-size: 2rem;
+  margin-top: 3.3rem;
 }
 /*# sourceMappingURL=main.css.map */

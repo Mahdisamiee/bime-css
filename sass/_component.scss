@@ -135,6 +135,8 @@
   top: -10rem;
   left: 50%;
   transform: translate(-50%, 0);
+  border-radius: 50px;
+
   min-height: 100rem;
 
   padding: 3rem;
@@ -169,13 +171,19 @@
 
     &-title {
       font-size: 2rem;
-      margin-bottom: 1rem;
+      margin-bottom: 2rem;
     }
+
+
+    &-shapes{
+      background-color: red;
+    }
+
 
     &-form {
       //test
       border: 1px solid var(--color-primary);
-      min-height: 35rem;
+      // min-height: 30rem;
 
       padding: 2rem 3.5rem;
       display: flex;
@@ -183,12 +191,6 @@
       align-items: center;
       align-content: space-between;
       flex-wrap: wrap;
-
-      .form-group {
-        flex: 0 0 30%;
-        display: flex;
-        flex-direction: column;
-      }
     }
   }
 }
@@ -207,4 +209,43 @@
     font-weight: 400;
     color: var(--color-grey-2);
   }
+}
+
+// ////////////////
+// form-group
+.form-group {
+  margin-bottom: 1.5rem;
+  flex: 0 0 31%;
+  display: flex;
+  flex-direction: column;
+
+  .form {
+    &__label {
+      color: var(--color-primary);
+      font-size: 1.6rem;
+      margin-right: 2rem;
+      margin-bottom: 1rem;
+    }
+
+    &__input {
+      font-family: inherit;
+      padding: 1.5rem 2.5rem;
+      border: 1.5px solid var(--color-primary);
+      border-radius: 10px;
+      box-shadow: 0 1rem 1rem rgba(#000, 0.1);
+    }
+  }
+}
+
+// //////////
+// Button
+.btn__submit{
+  font-family: inherit;
+  border: none;
+  background-color: var(--color-primary);
+  padding: 1rem 2.5rem;
+  border-radius: 10px;
+  color: #fff;
+  font-size: 2rem;
+  margin-top: 3.3rem;
 }
