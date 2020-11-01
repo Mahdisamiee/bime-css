@@ -290,11 +290,132 @@ body {
 }
 
 .card__remainer-shapes {
-  background-color: red;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.card__remainer-shapes > * {
+  position: absolute;
+  border-radius: 50%;
+}
+
+.card__remainer .blue {
+  background-color: var(--color-primary);
+}
+
+.card__remainer .yellow {
+  background-color: var(--color-secondary);
+}
+
+.card__remainer .shape1 {
+  top: 10px;
+  right: -10px;
+  width: 110px;
+  height: 100px;
+  z-index: 13;
+}
+
+.card__remainer .shape2 {
+  top: 0px;
+  right: 60px;
+  width: 110px;
+  height: 100px;
+  z-index: 12;
+}
+
+.card__remainer .shape3 {
+  top: 15px;
+  right: 110px;
+  width: 120px;
+  height: 100px;
+  z-index: 11;
+}
+
+.card__remainer .shape4 {
+  top: 5px;
+  right: 170px;
+  width: 120px;
+  height: 100px;
+  z-index: 10;
+}
+
+.card__remainer .shape5 {
+  top: 8px;
+  right: 220px;
+  width: 160px;
+  height: 120px;
+  z-index: 9;
+}
+
+.card__remainer .shape6 {
+  top: 15px;
+  right: 310px;
+  width: 150px;
+  height: 120px;
+  z-index: 8;
+}
+
+.card__remainer .shape7 {
+  top: 5px;
+  right: 400px;
+  width: 110px;
+  height: 100px;
+  z-index: 7;
+}
+
+.card__remainer .shape8 {
+  top: 15px;
+  right: 420px;
+  width: 160px;
+  height: 100px;
+  z-index: 6;
+}
+
+.card__remainer .shape9 {
+  top: 5px;
+  right: 460px;
+  width: 170px;
+  height: 110px;
+  z-index: 5;
+}
+
+.card__remainer .shape10 {
+  top: 16px;
+  right: 540px;
+  width: 120px;
+  height: 140px;
+  z-index: 4;
+}
+
+.card__remainer .shape11 {
+  top: 8px;
+  right: 605px;
+  width: 130px;
+  height: 120px;
+  z-index: 3;
+}
+
+.card__remainer .shape12 {
+  top: 0px;
+  right: 690px;
+  width: 110px;
+  height: 130px;
+  z-index: 2;
+}
+
+.card__remainer .shape13 {
+  top: 8px;
+  left: -15px;
+  width: 130px;
+  height: 120px;
+  z-index: 1;
 }
 
 .card__remainer-form {
-  border: 1px solid var(--color-primary);
+  position: relative;
+  z-index: 1000;
+  background-color: #fff;
   padding: 2rem 3.5rem;
   display: -webkit-box;
   display: -ms-flexbox;
