@@ -356,10 +356,6 @@
     color: var(--color-grey-2);
   }
 }
-
-// rotater
-
-
 // ////////////////
 // form-group
 .form-group {
@@ -385,7 +381,6 @@
     }
   }
 }
-
 // //////////
 // Button
 .btn__submit{
@@ -683,7 +678,7 @@
   }
 
   &__arrow{
-    border: 5px solid var(--color-grey-2);
+    border: 3px solid var(--color-grey-2);
     width: 6rem;
     height: 12rem;
     position: absolute;
@@ -738,4 +733,23 @@
 .arrow-icon-right:hover,
 .arrow-icon-left:hover{
   background-color: var(--color-secondary);
+}
+
+// /////////////
+// GOTO TOP
+.goto-top{
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 50%);
+
+  width: 4.5rem;
+  height: 4.5rem;
+  background-color: var(--color-grey-light);
+  border-radius: 50%;
+  padding: 4px;
+
+  & > img{
+    width: 100%;
+  }
 }
