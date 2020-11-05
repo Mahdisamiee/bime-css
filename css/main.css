@@ -45,8 +45,43 @@ body {
           justify-content: space-between;
 }
 
+.quick-access__box {
+  position: fixed;
+  z-index: 10;
+  width: 12rem;
+  height: 12rem;
+  border: 2px dashed var(--color-primary);
+  top: 50%;
+  -webkit-transform: translate(0, -50%);
+          transform: translate(0, -50%);
+  background-color: var(--color-grey-light);
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.quick-access__box--left {
+  left: 30px;
+}
+
+.quick-access__box--right {
+  right: 30px;
+}
+
+.quick-access__img {
+  width: 60%;
+  height: auto;
+}
+
 .about {
-  height: 88vh;
+  height: 90vh;
   background-image: url("../img/background1.png");
   background-size: cover;
   background-position: 50% 20%;
@@ -58,6 +93,35 @@ body {
   background-color: var(--color-grey-light);
   position: relative;
   min-height: 190rem;
+  z-index: 5;
+}
+
+.enter-main::before {
+  content: "";
+  width: 100%;
+  position: absolute;
+  z-index: 1;
+  height: 30rem;
+  top: -6rem;
+  left: 0;
+  background-image: url("/img/about-wave-d.svg");
+  background-position: center;
+  background-size: 120% 100%;
+  background-repeat: no-repeat;
+}
+
+.enter-main::after {
+  content: "";
+  width: 100%;
+  position: absolute;
+  z-index: -1;
+  height: 30rem;
+  top: -7rem;
+  left: 0;
+  background-image: url("/img/Asset 3.svg");
+  background-position: center;
+  background-size: 120% 100%;
+  background-repeat: no-repeat;
 }
 
 .footer {
@@ -83,7 +147,7 @@ body {
   background-image: url("/img/footer-wave2.svg");
   background-repeat: no-repeat;
   background-size: 100%;
-  z-index: 1;
+  z-index: 99;
 }
 
 .logo-box {
@@ -248,13 +312,14 @@ body {
           box-shadow: 0rem 2rem 3rem rgba(0, 0, 0, 0.1);
   width: 60%;
   position: absolute;
-  top: -10rem;
+  z-index: 6;
+  top: -9.8rem;
   left: 50%;
   -webkit-transform: translate(-50%, 0);
           transform: translate(-50%, 0);
   border-radius: 50px;
   min-height: 190rem;
-  padding: 3rem;
+  padding: .5rem 3rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -282,10 +347,15 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
   color: var(--color-primary);
+  line-height: 1.4;
 }
 
 .card__header-title {
   font-size: 3rem;
+}
+
+.card__header-subtitle {
+  font-weight: 700;
 }
 
 .card__features-box {

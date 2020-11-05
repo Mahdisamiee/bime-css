@@ -133,7 +133,8 @@
   box-shadow: 0rem 2rem 3rem rgba(#000, 0.1);
   width: 60%;
   position: absolute;
-  top: -10rem;
+  z-index: 6;
+  top: -9.8rem;
   left: 50%;
   transform: translate(-50%, 0);
   border-radius: 50px;
@@ -141,7 +142,7 @@
   // test
   min-height: 190rem;
 
-  padding: 3rem;
+  padding: .5rem 3rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -154,9 +155,12 @@
     align-items: center;
     justify-content: center;
     color: var(--color-primary);
-
+    line-height: 1.4;
     &-title {
       font-size: 3rem;
+    }
+    &-subtitle{
+      font-weight: 700;
     }
   }
 
@@ -826,7 +830,7 @@
 
 
   // //////////////////
-  // text
+  // copyright
   &__copyright{
     background-color: var(--color-secondary);
     position: absolute;
