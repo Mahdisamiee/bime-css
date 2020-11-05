@@ -51,7 +51,7 @@ body {
   width: 12rem;
   height: 12rem;
   border: 2px dashed var(--color-primary);
-  top: 50%;
+  top: 70%;
   -webkit-transform: translate(0, -50%);
           transform: translate(0, -50%);
   background-color: var(--color-grey-light);
@@ -65,19 +65,28 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .quick-access__box--left {
-  left: 5rem;
+  left: 6rem;
 }
 
 .quick-access__box--right {
-  right: 5rem;
+  right: 6rem;
 }
 
 .quick-access__img {
-  width: 60%;
+  width: 50%;
   height: auto;
+}
+
+.quick-access__text {
+  font-size: 1.4rem;
+  color: var(--color-primary);
 }
 
 .about {
