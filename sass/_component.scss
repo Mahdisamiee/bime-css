@@ -1,12 +1,35 @@
+
 // ///////////
 // LOGO
 .logo-box {
+  position: relative;
   display: flex;
   align-items: center;
   padding: 0.5rem 8rem;
+
   &__logo {
     width: 6rem;
     height: 6.5rem;
+    position: relative;
+    // top: 300px;
+    // right: 650px;
+    // transform: scale(5);
+    animation: transform-logo 2s linear;
+    animation-delay: $animation-delay-2;
+    animation-fill-mode: backwards;
+  }
+
+  @keyframes transform-logo {
+    0%{
+      top: 300px;
+      right: 650px;
+      transform: scale(5);
+    }
+    100%{
+      top: 0px;
+      right: 0px;
+      transform: scale(1);
+    }
   }
 
   &__title {
@@ -123,6 +146,38 @@
   &__item-text {
     transform: translateY(0);
     transition: all 0.2s;
+
+    animation: showing-bimes-text 1s;
+    animation-delay: $animation-delay-3;
+    animation-fill-mode: backwards;
+  }
+
+
+
+  animation: showing-bimes 3s;
+  animation-delay: $animation-delay-2;
+  animation-fill-mode: backwards;
+
+}
+
+@keyframes showing-bimes{
+  0%{
+    opacity: 0;
+  }
+
+  100%{
+    opacity: 1;
+  }
+}
+@keyframes showing-bimes-text{
+  0%{
+    transform: translateY(-2rem);
+    opacity: 0;
+  }
+
+  100%{
+    transform: translateY(0);
+    opacity: 1;
   }
 }
 
