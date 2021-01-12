@@ -1,5 +1,5 @@
 # bime-css
-responsive design of .xd file. using HTML && CSS3.
+responsive design of a .xd file with HTML && SCSS.
 
 
 desktop:
