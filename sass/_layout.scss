@@ -27,6 +27,10 @@ $animation-delay-3: 5s;
   animation: showing-header 3s;
   animation-delay: $animation-delay-2;
   animation-fill-mode: backwards;
+
+  @media screen and (max-width:1200px) {
+    display: none;
+  }
 }
 
 @keyframes showing-header{
@@ -72,6 +76,10 @@ $animation-delay-3: 5s;
     animation: showing-quick-access 3s linear;
     animation-delay: $animation-delay-2;
     animation-fill-mode: backwards;
+
+    @media screen and (max-width:1200px) {
+      display: none;
+    }
   }
 
   &__img{
@@ -83,6 +91,9 @@ $animation-delay-3: 5s;
     color: var(--color-primary);
   }
 
+
+
+ 
   
 }
 
@@ -100,9 +111,8 @@ $animation-delay-3: 5s;
 // ABOUT
 .about{
   // width: 100%;
-  // height: 100vh;
-
   height: 100vh;
+
   background-image: url("../img/background1.png");
   background-size: cover;
   background-position: 50% 20%;
@@ -110,6 +120,13 @@ $animation-delay-3: 5s;
 
   position: relative;
 
+  @media screen and (max-width:1200px) {
+
+
+    min-height: 160vh;
+    background-image: url("../img/background2.jpg");
+    background-attachment: scroll;
+  }
 }
 
 
@@ -125,9 +142,12 @@ $animation-delay-3: 5s;
 
   z-index: 5;
 
-  animation: showing-enter-main 3s linear;
-  animation-delay: $animation-delay-2;
-  animation-fill-mode: backwards;
+  // animation: showing-enter-main 3s linear;
+  // animation-delay: $animation-delay-2;
+  // animation-fill-mode: backwards;
+  @media screen {
+    min-height: 210rem;
+  }
 }
 
 .enter-main::before{
@@ -142,6 +162,13 @@ $animation-delay-3: 5s;
   background-position: center;
   background-size: 120% 100%;
   background-repeat: no-repeat;
+
+  @media screen and (max-width:1200px){
+    height: 15rem;
+    top: -11rem;
+    background-size:120%;
+    background-image: url("/img/about2-wave.svg");
+  }
 }
 .enter-main::after{
   content: "";
@@ -155,6 +182,13 @@ $animation-delay-3: 5s;
   background-position: center;
   background-size: 120% 100%;
   background-repeat: no-repeat;
+
+  @media screen and (max-width:1200px){
+    height: 10rem;
+    top: -2rem;
+    background-size: 100%;
+    display: none;
+  }
 }
 
 @keyframes showing-enter-main{
@@ -184,6 +218,24 @@ $animation-delay-3: 5s;
     width: 100%;
     height: auto;
   }
+
+  animation: showing-goto-down 3s;
+  animation-delay: $animation-delay-2;
+  animation-fill-mode: backwards;
+
+  @media screen and (max-width: 1200px){
+    display: none;
+  }
+}
+
+@keyframes showing-goto-down{
+  0%{
+    opacity: 0;
+  }
+
+  100%{
+    opacity: 1;
+  }
 }
 
 
@@ -202,6 +254,10 @@ $animation-delay-3: 5s;
   & > *{
     position: relative;
     z-index: 100;
+  }
+
+  @media screen and (max-width: 1200px){
+    display: none;
   }
 }
 .footer::before{
